@@ -9,6 +9,8 @@ Nginx works as a proxy from 80 to 8080 port
 
 CentOS AMI details: [CentOS AMI on AWS Marketplace](https://aws.amazon.com/marketplace/pp/B00O7WM7QW?ref=cns_1clkPro)
 
+Terraform module: [Terraform registry](https://registry.terraform.io/modules/sorenrix/centos-jenkins/aws)
+
 Resources
 ------
 Creates next resources on AWS:
