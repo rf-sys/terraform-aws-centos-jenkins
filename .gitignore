@@ -1,0 +1,12 @@
+.idea/
+.terraform/
+terraform.tfstate
+terraform.tfstate.backup
+/terraform.tfvars
+/.kitchen/
+/terraform.test.tfvars
+/terraform.tfstate.d/
+/id_rsa_test
+/id_rsa_test.pub
+/test_data.zip
+/.terraform.tfstate.lock.info

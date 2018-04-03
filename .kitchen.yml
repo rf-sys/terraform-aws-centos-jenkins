@@ -1,0 +1,25 @@
+---
+driver:
+  name: terraform
+  variable_files:
+    - terraform.test.tfvars
+
+provisioner:
+  name: terraform
+
+platforms:
+  - name: centos-7
+
+transport:
+  name: ssh
+  ssh_key: ./id_rsa_test
+
+verifier:
+  name: terraform
+  groups:
+    - name: jenkins-server
+      hostnames: jenkins_server_dns
+      username: centos
+
+suites:
+ - name: jenkins-server

@@ -1,0 +1,30 @@
+sudo: enabled
+
+language: ruby
+
+rvm:
+- 2.4.1
+
+cache: bundler
+
+before_install:
+  - sudo apt-get install wget unzip
+  - wget https://releases.hashicorp.com/terraform/0.11.5/terraform_0.11.5_linux_amd64.zip
+  - unzip terraform_0.11.5_linux_amd64.zip -d ~/bin
+  - source ~/.profile
+
+install:
+  - bundle install
+
+before_script:
+  - openssl aes-256-cbc -K $encrypted_097192a4cd4d_key -iv $encrypted_097192a4cd4d_iv -in test_data.zip.enc -out test_data.zip -d
+  - unzip test_data.zip -d .
+
+script:
+  - bundle exec kitchen create
+  - bundle exec kitchen converge
+  - bundle exec kitchen setup
+  - bundle exec kitchen verify
+
+after_script:
+  - bundle exec kitchen destroy
