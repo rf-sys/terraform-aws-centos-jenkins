@@ -7,5 +7,9 @@ output "jenkins_server_dns" {
 }
 
 output "initialAdminPassword_manual_receiving_steps" {
-  value = "\nssh -i ${var.aws_key_pair_private_key_path} -oStrictHostKeyChecking=no ec2-user@${aws_instance.jenkins_server.public_dns}\nsudo cat /var/lib/jenkins/secrets/initialAdminPassword"
+  value = "\nssh -i ${var.aws_key_pair_private_key_path} -oStrictHostKeyChecking=no centos@${aws_instance.jenkins_server.public_dns}\nsudo cat /var/lib/jenkins/secrets/initialAdminPassword"
+}
+
+output "ssh_connection_template" {
+  value = "ssh -i ${var.aws_key_pair_private_key_path} -oStrictHostKeyChecking=no centos@${aws_instance.jenkins_server.public_dns}"
 }
