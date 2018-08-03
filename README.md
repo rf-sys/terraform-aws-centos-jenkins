@@ -1,7 +1,7 @@
 Terraform-aws-centos-jenkins
 ======
 
-[![Build Status](https://travis-ci.org/sorenrix/terraform-aws-centos-jenkins.svg?branch=master)](https://travis-ci.org/sorenrix/terraform-aws-centos-jenkins)
+[![Build Status](https://travis-ci.org/salvatoris/terraform-aws-centos-jenkins.svg?branch=master)](https://travis-ci.org/salvatoris/terraform-aws-centos-jenkins)
 
 Installs Jenkins and Nginx on EC2 CentOS.
 
