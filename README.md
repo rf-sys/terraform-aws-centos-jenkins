@@ -24,7 +24,7 @@ Variables that are used by this module:
 1. aws_access_key - AWS account public key
 2. aws_secret_key - AWS account private key
 3. aws_region - AWS region
-4. aws_instance_ami - CentOS AMI ID (default: ami-337be65c). Last updated: 03.08.2018
+4. aws_instance_ami - CentOS AMI ID (default: ami-dd3c0f36). Last updated: 03.08.2018
 5. aws_instance_type - EC2 instance Type (example: t2.micro)
 6. aws_instance_name - EC2 instance name
 7. aws_security_group_name - name of new security group
