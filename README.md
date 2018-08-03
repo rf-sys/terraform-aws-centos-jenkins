@@ -33,3 +33,11 @@ Variables that are used by this module:
 10. aws_key_pair_private_key_path - path to ssh private key (example: /home/admin/.ssh/id_rsa)
 11. show_jenkins_password - show initialAdminPassword eventually (default: 0 - false) 
 12. attach_test_uids - attach uniq hash to resources' names (default: 0 - false) 
+
+Example Configuration
+------
+https://gist.github.com/salvatoris/f45e717433a6f09482963fbd01d24206
+
+Example Output
+------
+https://gist.github.com/salvatoris/1de5b5408303eb554305a876aa0ce846
