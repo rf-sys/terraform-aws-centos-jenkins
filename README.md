@@ -45,4 +45,5 @@ https://gist.github.com/salvatoris/1de5b5408303eb554305a876aa0ce846
 FAQ
 -----
 1. How to get info about latest CentOS AMI ?
+
 See https://wiki.centos.org/Cloud/AWS
