@@ -7,7 +7,7 @@ variable "aws_region" {}
 # instance
 
 variable "aws_instance_ami" {
-  # Default CentOS AMI. Last check: 02.08.2018
+  # Default CentOS AMI. Last check: 03.08.2018
   default = "ami-dd3c0f36"
 }
 variable "aws_instance_type" {}
